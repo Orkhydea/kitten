@@ -1,0 +1,34 @@
+body{
+    background-image: url("../assets/img/dawn.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+img{
+    width: 100%;
+}
+.row{
+    height: 50%;
+    padding: 0;
+}
+.kitten{
+    margin-top: 5%;
+}
+/*probando con fondo nocturno*/
+@media all and (min-width:780px) and (max-width: 1024px){
+    body{
+       background-image: url("../assets/img/sunny-day.jpg");
+    }
+    .kitten{
+        content: url("../assets/img/kitten-medium.png");
+    }
+}
+@media all and (max-width:480px){
+    body{
+        background-image: url("../assets/img/night.jpg");
+     }
+     .kitten{
+         content: url("../assets/img/kitten-small.png")
+     }
+ }
